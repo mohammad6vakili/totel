@@ -30,8 +30,23 @@ const Filterbar = () => {
   };
 
   return (
-    <div className={styles.filternar_container}>
-      <Swiper modules={[Pagination]} spaceBetween={20} slidesPerView={7}>
+    <div className={styles.filterbar_container}>
+      <Swiper
+        breakpoints={{
+          300: {
+            slidesPerView: 3,
+          },
+          600: {
+            slidesPerView: 6,
+          },
+          1000: {
+            slidesPerView: 6,
+          },
+        }}
+        modules={[Pagination]}
+        spaceBetween={20}
+        slidesPerView={7}
+      >
         <SwiperSlide className={styles.filter_slide}>
           <Select
             onChange={(value) => setPrice(value)}
