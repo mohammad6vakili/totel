@@ -8,9 +8,15 @@
 .rooms_result_list {
   width: 100% !important;
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
   grid-gap: 32px !important;
   margin-bottom: 32px;
+}
+.rooms_map {
+  height: 100%;
+  transition: width 0.25s;
+  margin-left: 32px;
+  min-width: 30%;
 }
 @media only screen and (max-width: 1100px) {
   .rooms_result_container {
