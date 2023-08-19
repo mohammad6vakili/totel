@@ -1,10 +1,16 @@
 "use client";
+// next imports
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 import styles from "./header.module.css";
+// assets imports
 import Logo from "@/assets/images/logo";
 import ArrowBottom from "@/assets/icons/arrow_bottom";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import { Popover } from "antd";
+import Avatar from "@/assets/images/Avatar.png";
+// antd imports
+import { Button, Popover } from "antd";
 
 const Header = () => {
   const pathname = usePathname();
@@ -23,9 +29,11 @@ const Header = () => {
   );
   return (
     <div className={styles.header}>
+      {/* logo */}
       <Link href={"/"} className={styles.header_logo_section}>
         <Logo />
       </Link>
+      {/* navigation */}
       <ul className={styles.header_links}>
         <li className={pathname === "/" ? styles.header_link_active : ""}>
           <Link href={"/"}>Rooms</Link>
@@ -44,6 +52,12 @@ const Header = () => {
           <Link href={"/"}>Help</Link>
         </li>
       </ul>
+      <div className={styles.header_user}>
+        <Button id="btn_outline_light">Manage Listings</Button>
+        <Link href={"/"}>
+          <Image src={Avatar} alt="user avatar" />
+        </Link>
+      </div>
     </div>
   );
 };

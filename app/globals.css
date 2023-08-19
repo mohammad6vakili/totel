@@ -29,3 +29,17 @@ body {
 a {
   text-decoration: none;
 }
+
+#btn_outline_light {
+  background: white !important;
+  border: 1px solid var(--gray);
+  border-radius: 100px !important;
+  height: 46px !important;
+  padding: 0 18px !important;
+  color: var(--dark);
+  font-size: 14px;
+}
+#btn_outline_light:hover {
+  color: var(--primary);
+  border: 1px solid var(--primary) !important;
+}
