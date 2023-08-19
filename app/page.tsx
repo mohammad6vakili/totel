@@ -84,6 +84,9 @@ const Home = () => {
               <SearchWhiteIcon />
             </Button>
           </div>
+          <div className={styles.mobile_search_btn}>
+            <Button id="btn_royal">Search</Button>
+          </div>
         </div>
       </div>
     </main>
