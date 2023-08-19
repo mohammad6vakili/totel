@@ -17,6 +17,7 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: null,
   },
   {
     id: 2,
@@ -31,6 +32,20 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: [
+      {
+        id: 1,
+        title: "Love Hotel",
+        color: "#5D55F6",
+        background: "#ECEBFF",
+      },
+      {
+        id: 2,
+        title: "Hourly Basis Available",
+        color: "#2D8A39",
+        background: "#F0FAF0",
+      },
+    ],
   },
   {
     id: 3,
@@ -45,6 +60,14 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: [
+      {
+        id: 1,
+        title: "Love Hotel",
+        color: "#5D55F6",
+        background: "#ECEBFF",
+      },
+    ],
   },
   {
     id: 4,
@@ -59,6 +82,7 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: null,
   },
   {
     id: 5,
@@ -73,6 +97,7 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: null,
   },
   {
     id: 6,
@@ -87,6 +112,7 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: null,
   },
   {
     id: 7,
@@ -101,6 +127,7 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: null,
   },
   {
     id: 8,
@@ -115,6 +142,7 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: null,
   },
   {
     id: 9,
@@ -129,6 +157,14 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: [
+      {
+        id: 1,
+        title: "Love Hotel",
+        color: "#5D55F6",
+        background: "#ECEBFF",
+      },
+    ],
   },
   {
     id: 10,
@@ -143,6 +179,7 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: null,
   },
   {
     id: 11,
@@ -157,6 +194,7 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: null,
   },
   {
     id: 12,
@@ -171,5 +209,13 @@ export const ROOMS = [
     price_per_unit: "Day",
     currency: "dollar",
     currency_symbol: "$",
+    badges: [
+      {
+        id: 1,
+        title: "Love Hotel",
+        color: "#5D55F6",
+        background: "#ECEBFF",
+      },
+    ],
   },
 ];

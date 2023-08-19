@@ -11,8 +11,21 @@ const RoomCard = ({ data }: any) => {
       </div>
       {/* details */}
       <div>
+        {/* badges */}
+        {/* {data?.badges ? (
+          <div className={styles.room_card_badges}>
+            {data?.badges?.map((badge: any, index: number) => (
+              <div
+                key={index}
+                style={{ background: badge?.background, color: badge?.color }}
+              >
+                {badge?.title}
+              </div>
+            ))}
+          </div>
+        ) : null} */}
         {/* title and score */}
-        <div>
+        <div className={styles.room_card_title}>
           <h4>{data?.title}</h4>
           <div>
             <StarIcon />
@@ -20,11 +33,11 @@ const RoomCard = ({ data }: any) => {
           </div>
         </div>
         {/* datetime */}
-        <div>
+        <div className={styles.room_card_datetime}>
           {data?.datetime_from} - {data?.datetime_to}
         </div>
         {/* description */}
-        <div>{data?.description}</div>
+        <div className={styles.room_card_description}>{data?.description}</div>
         {/* price */}
         <div>
           {data?.currency_symbol} {data?.price} / {data?.price_per_unit}

@@ -7,6 +7,7 @@
   display: grid !important;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
   grid-gap: 32px !important;
+  margin-bottom: 32px;
 }
 @media only screen and (max-width: 1100px) {
   .rooms_result_container {
