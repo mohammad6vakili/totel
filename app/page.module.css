@@ -1,6 +1,9 @@
+.rooms_result {
+  padding: 0 100px;
+  display: flex;
+}
 .rooms_result_container {
   width: 100%;
-  padding: 0 100px;
 }
 .rooms_result_list {
   width: 100% !important;

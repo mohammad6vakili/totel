@@ -6,10 +6,9 @@ import FilterIcon from "@/assets/icons/filter";
 import MapIcon from "@/assets/icons/map";
 import { useState } from "react";
 
-const Filterbar = () => {
+const Filterbar = ({ selectedFilters, setSelectedFilters }: any) => {
   const [type, setType] = useState(null);
   const [price, setPrice] = useState(null);
-  const [selectedFilters, setSelectedFilters] = useState<any>([]);
 
   const handleSelectFilter = (key: any) => {
     let array = [...selectedFilters];
