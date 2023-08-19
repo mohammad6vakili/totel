@@ -33,6 +33,7 @@ const Home = () => {
         selectedFilters={selectedFilters}
         setSelectedFilters={setSelectedFilters}
       />
+      {/* rooms list */}
       <div className={styles.rooms_result}>
         <div className={styles.rooms_result_container}>
           <div className={styles.rooms_result_list}>
@@ -87,6 +88,16 @@ const Home = () => {
             </ReactMapGL>
           </div>
         ) : null}
+      </div>
+      {/* banner */}
+      <div className={styles.banner}>
+        <div>1% OF THE INDUSTRY</div>
+        <h4>
+          Welcome to your room sharing platform that which You can find places
+          and stay with hotels and home-stays ranked by travellers. What fun
+          could we have more than having roommate with similar interest.
+        </h4>
+        <Button>Get started</Button>
       </div>
     </main>
   );
