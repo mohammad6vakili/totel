@@ -1,5 +1,6 @@
 "use client";
 import styles from "./page.module.css";
+import type { Metadata } from "next";
 // react imports
 import { useState } from "react";
 
