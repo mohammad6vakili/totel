@@ -1,0 +1,18 @@
+.filternar_container {
+  width: 100%;
+  padding: 24px 100px;
+}
+.filter_slide {
+  width: unset !important;
+  margin: 8px 0;
+}
+.filter_slide > button,
+.filter_slide > div > div {
+  height: 48px !important;
+  display: flex;
+  align-items: center;
+  border-radius: 100px !important;
+}
+.filter_slide > button > svg {
+  margin-right: 8px;
+}
