@@ -9,7 +9,7 @@ import { ROOMS } from "@/data/rooms";
 import { Fragment } from "react";
 import RoomCard from "@/components/room_card";
 import { Button } from "antd";
-import ReactMapGL, { Marker } from "react-map-gl";
+import Map, { Marker } from "react-map-gl";
 import MapMarker from "@/assets/icons/map_marker";
 
 const Home = () => {
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
         {selectedFilters.includes(8) ? (
           <div className={styles.rooms_map}>
-            <ReactMapGL
+            <Map
               mapboxApiAccessToken="pk.eyJ1IjoibW9oYW1tYWQtdmFhIiwiYSI6ImNsbGk0cTh1YTFlemszam1rOHloZnMwb3kifQ.2nZwAfPBYZxuT_VWloY5Ug"
               {...viewport}
               onViewportChange={(viewport: any) => setViewport(viewport)}
@@ -60,32 +60,25 @@ const Home = () => {
               <Marker
                 longitude={-2.5614306169482153}
                 latitude={51.51064827047832}
-                anchor="bottom"
               >
                 <MapMarker />
               </Marker>
               <Marker
                 longitude={-2.570094551240346}
                 latitude={51.51103762264614}
-                anchor="bottom"
               >
                 <MapMarker />
               </Marker>
               <Marker
                 longitude={-2.5761764657250463}
                 latitude={51.51645474709417}
-                anchor="bottom"
               >
                 <MapMarker />
               </Marker>
-              <Marker
-                longitude={-2.605729161500232}
-                latitude={51.530319665521}
-                anchor="bottom"
-              >
+              <Marker longitude={-2.605729161500232} latitude={51.530319665521}>
                 <MapMarker />
               </Marker>
-            </ReactMapGL>
+            </Map>
           </div>
         ) : null}
       </div>
