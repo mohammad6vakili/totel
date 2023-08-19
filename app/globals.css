@@ -3,6 +3,8 @@
   --secondary: #5f6d7e;
   --dark: #000000;
   --gray: #dae0e6;
+  --gray700: #272d37;
+  --max_width: 1600px;
 }
 @font-face {
   font-family: InterNormal;
@@ -42,4 +44,37 @@ a {
 #btn_outline_light:hover {
   color: var(--primary);
   border: 1px solid var(--primary) !important;
+}
+#btn_primary {
+  background: var(--primary) !important;
+  border: 1px solid var(--primary);
+  border-radius: 100px !important;
+  height: 46px !important;
+  color: white;
+  font-size: 14px;
+}
+#autocomplete > div div {
+  height: 100% !important;
+  border-radius: 100px !important;
+  border: 1px solid var(--gray) !important;
+}
+#autocomplete > div > div {
+  border: unset !important;
+}
+#autocomplete > div > div {
+  height: 48px !important;
+}
+#autocomplete > div span {
+  display: flex;
+  align-items: center;
+}
+#autocomplete > div input {
+  height: 100% !important;
+}
+#timepicker > div,
+#datepicker > div {
+  width: 100%;
+  height: 48px;
+  border: 1px solid var(--gray);
+  border-radius: 100px;
 }
