@@ -55,6 +55,11 @@ const Filterbar = () => {
             onClick={() => {
               handleSelectFilter(1);
             }}
+            className={
+              selectedFilters.find((item: any) => item == 1)
+                ? styles.selected_filter
+                : ""
+            }
           >
             Free Cancellation
           </Button>
@@ -64,6 +69,11 @@ const Filterbar = () => {
             onClick={() => {
               handleSelectFilter(2);
             }}
+            className={
+              selectedFilters.find((item: any) => item == 2)
+                ? styles.selected_filter
+                : ""
+            }
           >
             Wifi
           </Button>
@@ -73,6 +83,11 @@ const Filterbar = () => {
             onClick={() => {
               handleSelectFilter(3);
             }}
+            className={
+              selectedFilters.find((item: any) => item == 3)
+                ? styles.selected_filter
+                : ""
+            }
           >
             Air conditioning
           </Button>
@@ -82,6 +97,11 @@ const Filterbar = () => {
             onClick={() => {
               handleSelectFilter(4);
             }}
+            className={
+              selectedFilters.find((item: any) => item == 4)
+                ? styles.selected_filter
+                : ""
+            }
           >
             Washer
           </Button>
@@ -91,6 +111,11 @@ const Filterbar = () => {
             onClick={() => {
               handleSelectFilter(5);
             }}
+            className={
+              selectedFilters.find((item: any) => item == 5)
+                ? styles.selected_filter
+                : ""
+            }
           >
             Dryer
           </Button>
@@ -100,6 +125,11 @@ const Filterbar = () => {
             onClick={() => {
               handleSelectFilter(6);
             }}
+            className={
+              selectedFilters.find((item: any) => item == 6)
+                ? styles.selected_filter
+                : ""
+            }
           >
             Free Parking
           </Button>
@@ -109,6 +139,11 @@ const Filterbar = () => {
             onClick={() => {
               handleSelectFilter(7);
             }}
+            className={
+              selectedFilters.find((item: any) => item == 7)
+                ? styles.selected_filter
+                : ""
+            }
           >
             <FilterIcon />
             Filter
@@ -119,6 +154,11 @@ const Filterbar = () => {
             onClick={() => {
               handleSelectFilter(8);
             }}
+            className={
+              selectedFilters.find((item: any) => item == 8)
+                ? styles.selected_filter
+                : ""
+            }
           >
             <MapIcon />
             Show In Map

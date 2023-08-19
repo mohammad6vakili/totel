@@ -13,6 +13,16 @@
   align-items: center;
   border-radius: 100px !important;
 }
+.filter_slide > button {
+  font-size: 13px !important;
+}
 .filter_slide > button > svg {
   margin-right: 8px;
+}
+.selected_filter {
+  background: var(--primary) !important;
+  color: white !important;
+}
+.selected_filter path {
+  stroke: white !important;
 }
