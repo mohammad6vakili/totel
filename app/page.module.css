@@ -2,6 +2,12 @@
   width: 100%;
   padding: 0 100px;
 }
+.rooms_result_list {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  grid-gap: 32px !important;
+}
 @media only screen and (max-width: 1100px) {
   .rooms_result_container {
     padding: 0 48px;

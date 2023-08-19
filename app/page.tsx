@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 import Searchbar from "@/components/searchbar";
 import { ROOMS } from "@/data/rooms";
 import { Fragment } from "react";
+import RoomCard from "@/components/room_card";
 
 const Home = () => {
   return (
@@ -18,7 +19,9 @@ const Home = () => {
         <div style={{ display: "none" }}>Map</div>
         <div className={styles.rooms_result_list}>
           {ROOMS.map((room, index) => (
-            <Fragment key={index}>{index}</Fragment>
+            <Fragment key={index}>
+              <RoomCard data={room} />
+            </Fragment>
           ))}
         </div>
       </div>
