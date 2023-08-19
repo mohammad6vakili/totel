@@ -1,12 +1,12 @@
 "use client";
 import styles from "./page.module.css";
-import Filterbar from "@/components/filterbar";
+import Searchbar from "@/components/searchbar";
 
 const Home = () => {
   return (
     <main className={styles.main}>
       {/* filterbar */}
-      <Filterbar />
+      <Searchbar />
     </main>
   );
 };
