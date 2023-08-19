@@ -11,6 +11,7 @@ import ArrowBottom from "@/assets/icons/arrow_bottom";
 import Avatar from "@/assets/images/Avatar.png";
 // antd imports
 import { Button, Popover } from "antd";
+import HamburgerMenu from "@/assets/icons/hamburger_menu";
 
 const Header = () => {
   const pathname = usePathname();
@@ -42,7 +43,11 @@ const Header = () => {
           <Link href={"/"}>Looking for Roommate</Link>
         </li>
         <li>
-          <Popover content={companyPopoverContent} title={null}>
+          <Popover
+            content={companyPopoverContent}
+            title={null}
+            trigger={"hover"}
+          >
             <Link href={"/"}>
               Company <ArrowBottom style={{ marginLeft: 5 }} />
             </Link>
@@ -58,6 +63,9 @@ const Header = () => {
           <Image src={Avatar} alt="user avatar" />
         </Link>
       </div>
+      <button className={styles.hamburger_menu} type="button">
+        <HamburgerMenu />
+      </button>
     </div>
   );
 };
