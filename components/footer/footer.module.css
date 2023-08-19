@@ -3,6 +3,26 @@
   padding: 40px 100px;
   border: 1px solid red;
 }
+.footer > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+.footer > div:nth-child(2) > span:nth-child(2) {
+  color: var(--secondary);
+  font-size: 16px;
+}
+.footer > div:nth-child(2) > div:last-child {
+  display: flex;
+  align-items: center;
+}
+.footer > div:nth-child(2) > div:last-child > a {
+  margin-right: 24px;
+}
+.footer > div:nth-child(2) > div:last-child > a:last-child {
+  margin-right: 0;
+}
 @media only screen and (max-width: 1100px) {
   .footer {
     padding: 40px 48px;
